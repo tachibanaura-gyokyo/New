@@ -10,14 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
-  <style id="style"></style>
+  <style id="style">{% include style.html %}</style>
 </head>
 <body class="bg-slate-50 text-slate-800">
+  {% include backimage.html %}
   {% include header.html %}
-  <div id="backimage">{% include backimage.html %}</div>
-
   {{ content }}
-
   {% include footer.html %}
 </body>
 </html>
