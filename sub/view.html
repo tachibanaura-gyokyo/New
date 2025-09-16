@@ -1,0 +1,46 @@
+---
+layout: default
+title: プライバシーポリシー | 橘浦漁業協同組合
+description: 橘浦漁業協同組合の公式サイト。橘浦の漁業、組合概要、活動、楽しむ情報を掲載。
+---
+    
+    <main class="max-w-7xl px-4 py-3 grid grid-cols-1 lg:grid-cols-6 gap-8">
+      <aside class="lg:col-span-1">
+        <div class="mt-2 space-y-1" oncontextmenu="return false">
+          <a href="{{ '/sub/view2.html' | relative_url }}" class="group block border" title="橘浦の風景２">
+            <div class="relative">
+              <img class="pointer-events-none w-2/3 mx-auto rounded-xl shadow"
+                src="{{ '/img/Top.webp' | relative_url }}"
+                alt="橘浦の風景２" draggable="false" style="-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;" loading="lazy"/>
+              <span class="pointer-events-none absolute bottom-2 left-3 right-3 text-white font-semibold drop-shadow">橘浦の風景２</span>
+            </div>
+          </a>
+          <a href="{{ '/sub/view3.html' | relative_url }}" class="group block border" title="橘浦の風景３">
+            <div class="relative">
+              <img class="pointer-events-none w-2/3 mx-auto rounded-xl shadow"
+                src="{{ '/img/Top3.webp' | relative_url }}"
+                alt="橘浦の風景" draggable="false" style="-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;" loading="lazy"/>
+              <span class="pointer-events-none absolute bottom-2 left-3 right-3 text-white font-semibold drop-shadow">橘浦の風景３</span>
+            </div>
+          </a>
+          
+        </div>
+      </aside>
+    </main>
+    
+    <button id="focusToggle"
+      class="fixed bottom-4 right-4 z-[100] px-4 py-2 rounded-full bg-sky-600 text-white shadow
+        hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600"
+      type="button" aria-pressed="false">
+      背景画像のみを表示
+    </button>
+    <script>
+      const targets = ['#primaryNav','header','aside','footer','main']; // 必要に応じて追加
+      const btn = document.getElementById('focusToggle');
+      let on = false;
+      btn.addEventListener('click', () => {
+        on = !on;
+        targets.forEach(s => document.querySelectorAll(s).forEach(el => el.classList.toggle('hidden', on)));
+        btn.textContent = on ? '通常表示に戻す' : '背景画像のみを表示';
+      });
+    </script>
