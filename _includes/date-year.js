@@ -1,4 +1,4 @@
-fetch("/New/_include/footer.html")
+fetch("/New/_includes/footer.html")
   .then(r => r.text())
   .then(html => {
     const box = document.querySelector("#footer");
