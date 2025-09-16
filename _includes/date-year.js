@@ -1,4 +1,4 @@
-fetch("/tachibanaura-site/include/footer.html")
+fetch("/New/include/footer.html")
   .then(r => r.text())
   .then(html => {
     const box = document.querySelector("#footer");
