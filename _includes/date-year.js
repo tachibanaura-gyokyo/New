@@ -1,4 +1,4 @@
-fetch("footer.html")
+fetch({% include footer.html %})
   .then(r => r.text())
   .then(html => {
     const box = document.querySelector("#footer");
