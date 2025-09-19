@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tachibanaura-gyokyo.github.io/New/sitemap.xml
