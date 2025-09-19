@@ -170,7 +170,7 @@ baseurl: "https://tachibanaura-gyokyo.github.io/New"
   (async () => {
     const ul = document.getElementById('newsList');
     try {
-      const res = await fetch('/news.json', { cache: 'no-store' });
+      const res = await fetch('news.json', { cache: 'no-store' });
       if (!res.ok) throw new Error('no json');
       const items = await res.json();
       if (!Array.isArray(items) || items.length === 0) throw new Error('empty');
