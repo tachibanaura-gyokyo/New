@@ -1,0 +1,15 @@
+h2{
+  font-family: "メイリオ", "Osaka", "ＭＳ Ｐゴシック";
+  background-color: #d2edcc;
+  color: #444444;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 5px 5px 2px 5px;
+  border-bottom-width: 1px;
+  border-left-width: 7px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-color: #99CC66;
+  border-left-color: #99CC66;
+}
