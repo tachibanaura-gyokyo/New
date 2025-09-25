@@ -28,23 +28,7 @@ img {
   height: auto;
 }
 
-@media only screen and (max-width: 979px) {
-    /*デバイスの横幅が979px以下の場合*/
-    Html{
-        Width:70%;
-    }
-} 
- 
-@media only screen and (min-width: 321px) and (max-width: 768px) {
-    /*デバイスの横幅が321以上768以下の場合*/
-    Html{
-        Width:55%;
-    }
-} 
- 
-@media only screen and (max-width: 320px) {
-    /* デバイスの横幅が320px以下の場合 */
-    header{
-        Width:40%;
-    }
-} 
+/* スマホだけ余白を増やす（768px以下） */
+@media (max-width: 768px) {
+  .hero .mt-6 { margin-top: 1.25rem; }
+}
