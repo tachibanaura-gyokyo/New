@@ -31,20 +31,20 @@ img {
 @media only screen and (max-width: 979px) {
     /*デバイスの横幅が979px以下の場合*/
     Html{
-        Width:100%;
+        Width:70%;
     }
 } 
  
 @media only screen and (min-width: 321px) and (max-width: 768px) {
     /*デバイスの横幅が321以上768以下の場合*/
     Html{
-        Width:100%;
+        Width:55%;
     }
 } 
  
 @media only screen and (max-width: 320px) {
     /* デバイスの横幅が320px以下の場合 */
     header{
-        Width:90%;
+        Width:40%;
     }
 } 
