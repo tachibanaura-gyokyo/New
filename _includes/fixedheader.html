@@ -1,0 +1,13 @@
+<style>
+  /* ヘッダーの高さ（端末幅で切替） */
+  :root { --nav-h: 56px; }              /* base: 約 h-14 相当 */
+  @media (min-width: 640px) { :root { --nav-h: 64px; } } /* sm 以上: 約 h-16 */
+
+  /* 本文を常にヘッダー分だけ下げる（＝裏に潜らない） */
+  body { padding-top: var(--nav-h); }
+
+  /* #news / #enjoy などアンカー到達時の被り防止 */
+  :where(section, article, div, h2, h3, h4)[id] {
+    scroll-margin-top: calc(var(--nav-h) + 8px);
+  }
+</style>
