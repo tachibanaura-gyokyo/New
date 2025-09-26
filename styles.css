@@ -16,7 +16,30 @@ body {
 footer { letter-spacing: .01em; }
 
 /* 文字サイズ設定 */
+h1 {
+  font-family: "HGP明朝B";
+  font-weight: bold;
+}
 
+h2 {
+  font-family: "メイリオ", "Osaka", "ＭＳ Ｐゴシック";
+  background-color: #d2edcc;
+  color: #444444;
+  font-size: 22px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 5px 5px 2px 5px;
+  border-bottom-width: 1px;
+  border-left-width: 7px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-color: #99CC66;
+  border-left-color: #99CC66;
+}
+
+.css-size-small {
+  font-size: 12px;
+}
 
 /* ヒーロー見出しを少しだけ読みやすく（影） */
 .hero h2 { text-shadow: 0 2px 8px rgba(0,0,0,.35); }
