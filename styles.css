@@ -18,7 +18,7 @@ footer { letter-spacing: .01em; }
 /* 文字サイズ設定 */
 h1 {
   font-family: "HGP明朝B";
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
