@@ -22,10 +22,5 @@
       btn.textContent = on ? '通常表示に戻す' : '背景画像のみを表示';
     });
   </script>
-  <script type="text/javascript">
-    document.getElementById("pp-date").innerHTML = showDay(); function showDay() {var now = new Date(); var day = now.toLocaleDateString('ja-JP-u-ca-japanese', {dateStyle: 'long'}); return day;}
-  </script>
-  <script type="text/javascript">
-    document.getElementById("pp-year").innerHTML = showYear(); function showYear() {var now = new Date(); var year = now.getFullYear(); return year;}
-  </script>
+  {% include datescripts.html %}
 </html>
