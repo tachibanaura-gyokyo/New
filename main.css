@@ -13,3 +13,7 @@ h2 {
   border-bottom-color: #99CC66;
   border-left-color: #99CC66;
 }
+
+.css-size-small {
+  font-size: 12px;
+}
