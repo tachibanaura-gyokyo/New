@@ -41,6 +41,11 @@ h2 {
   font-size: 12px;
 }
 
+.rei-title {
+  border-top : solid 6px #000099
+  border-bottom : solid 6px #000099
+}
+
 /* ヒーロー見出しを少しだけ読みやすく（影） */
 .hero h2 { text-shadow: 0 2px 8px rgba(0,0,0,.35); }
 
