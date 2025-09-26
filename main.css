@@ -1,3 +1,8 @@
+h1 {
+  font-family: "HGP明朝B";
+  font-weight: bold;
+}
+
 h2 {
   font-family: "メイリオ", "Osaka", "ＭＳ Ｐゴシック";
   background-color: #d2edcc;
@@ -16,9 +21,4 @@ h2 {
 
 .css-size-small {
   font-size: 12px;
-}
-
-h1 {
-  font-family: "HGP明朝B";
-  font-weight: bold;
 }
