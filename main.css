@@ -1,1 +1,106 @@
+/* 文字の読みやすさを少し向上 */
+body { 
+  line-height: 1.8;
+  font-family: 'Noto Sans JP', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; 
+}
+.text-outline{
+  -webkit-text-stroke: 1px rgba(0,0,0,.45);
+  text-stroke: 1px rgba(0,0,0,.45);
+  text-shadow: -1px -1px 0 rgba(0,0,0,.7), 1px -1px 0 rgba(0,0,0,.7), -1px 1px 0 rgba(0,0,0,.7), 1px 1px 0 rgba(0,0,0,.7);
+}
+.text-shadow-strong{
+  text-shadow:  0 3px 6px rgba(0,0,0,0.8);
+}
 
+/* フッターの小さい文字を少しコントラストUP */
+footer { letter-spacing: .01em; }
+
+/* 文字サイズ設定 */
+h1 {
+  font-family: "HGP明朝B";
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "メイリオ", "Osaka", "ＭＳ Ｐゴシック";
+  background-color: #d2edcc;
+  color: #444444;
+  font-size: 22px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 5px 5px 2px 5px;
+  border-bottom-width: 1px;
+  border-left-width: 7px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-color: #99CC66;
+  border-left-color: #99CC66;
+}
+
+.css-size-small {
+  font-size: 12px;
+}
+
+.rei-title {
+  border-top: solid 8px #000099;
+  border-bottom: solid 8px #000099;
+}
+
+.h2-line {
+  border-top: solid 1px #000099;
+  border-bottom: solid 1px #000099;
+}
+/* ヒーロー見出しを少しだけ読みやすく（影） */
+.hero h2 { text-shadow: 0 2px 8px rgba(0,0,0,.35); }
+
+/* ブログ画像バナーを少し拡大（ホバー演出） */
+a[title="ブログへ"] img { transition: transform .25s; }
+a[title="ブログへ"]:hover img { transform: scale(1.02); }
+a[title="案内"] img { transition: transform .25s; }
+a[title="案内"]:hover img { transform: scale(1.02); }
+
+/* サイト全体のリンク色とホバー */
+a { 
+  color: #0D9AD9;/* sky-500 に近い色 */
+	text-decoration: none;
+}
+a:hover { 
+  text-decoration: underline;
+  background-color: #72CDF6;
+}
+
+/* サイドの小バナーの角を強調 */
+aside img { border-radius: 16px; }
+
+/* 画像サイズ設定 */
+img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+/* スマホだけ余白を増やす（768px以下） */
+@media (max-width: 768px) {
+  .hero .mt-6 { margin-top: 1.25rem; }
+}
+
+@media only screen and (max-width: 979px) {
+    /*デバイスの横幅が979px以下の場合*/
+    Html{
+        Width:100%;
+    }
+} 
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    /*デバイスの横幅が321以上768以下の場合*/
+    Html{
+        Width:100%;
+    }
+} 
+ 
+@media only screen and (max-width: 320px) {
+    /* デバイスの横幅が320px以下の場合 */
+    header{
+        Width:90%;
+    }
+} 
