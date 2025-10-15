@@ -11,7 +11,7 @@ body {
 	scroll-behavior: smooth;
 }
 
-nav {
+#mainheader {
 	position: fixed;
 	z-index: 50;
 	right: 0;
